@@ -9,7 +9,6 @@ def compute(fname):
     if line.startswith("From")
       email=line.split()[1]
       count[email]=count.get(email,0)+1
-  max=0
   min=0
   for email in count
   if min>count[email]
