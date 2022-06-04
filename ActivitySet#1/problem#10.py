@@ -12,7 +12,7 @@ def compute(fname):
   min=0
   for email in count
   if min>count[email]
-    email=min
+    email=mi
   if max<count[email]
     email=max
 
