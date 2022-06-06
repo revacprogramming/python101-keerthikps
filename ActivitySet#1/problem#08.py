@@ -9,12 +9,11 @@ def compute(fname):
   s=0
   for line in fh:
     if not line.startswith("X-DSPAM-Confidence:"):
-        continue
-    else:
-       ext=line.find(":")
-       e=float(line[20:])
-       s=float(s+e)
-       count=count+1
+       continue
+    ext=line.find(":")
+    e=float(line[ext+1:])
+    s=float(s+e)
+    count=count+1
   avg=float(s/count)
   return avg    
 def output(avg):

@@ -14,9 +14,11 @@ def comparision():
                 smallest = num
         except:
             print ("Invalid input")
-            continue
-    print ("Maximum is",largest)
-    print ("Minimum is",smallest)
+    return largest,smallest
+def output(largest,smallest):
+  print ("Maximum is",largest)
+  print ("Minimum is",smallest)
 def main():
-    comparision()    
+  largest,smallest=comparision() 
+  output(largest,smallest)
 main()

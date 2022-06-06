@@ -9,13 +9,20 @@ def compute(fname):
     if line.startswith("From")
       email=line.split()[1]
       count[email]=count.get(email,0)+1
-  min=0
+  max_count=0
+  max_email=0
   for email in count
-  if min>count[email]
-    email=mi
-  if max<count[email]
-    email=max
-
+    if max_count<count[email]
+      max_count=count[email]
+      max_email=email
+  return max_count,max_email
+def output(max_count,max_email)
+  print(max_email,max_count)
+def main()
+  fname=myinput()
+  max_count,max_email=compute(fname)
+  output(max_count,max_email)
+main()
    
         
         

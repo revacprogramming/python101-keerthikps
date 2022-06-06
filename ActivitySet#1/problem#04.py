@@ -2,7 +2,7 @@
 def compute(h,r):
   if h<40:
     m=h*r
-  elif h>40:
+  else:
     m=40*r+(h-40)*1.5*r
   return m  
 def output(m):
