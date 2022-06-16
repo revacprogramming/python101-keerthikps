@@ -1,4 +1,4 @@
-#mbox-short.txt file name
+ #mbox-short.txt file name
 #From stephen.marquard@uct.ac.za example
 def myinput():
   
