@@ -19,7 +19,7 @@ def compute(fname):
 def output(max_count,max_email)
   print(max_email,max_count)
 def main():
-  fname=myinput()
+  fname=myinput():
   max_count,max_email=compute(fname)
   out(max_count,max_count)
 
