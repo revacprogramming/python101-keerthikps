@@ -21,7 +21,7 @@ def output(max_count,max_email)
 def main():
   fname=myinput()
   max_count,max_email=compute(fname)
-  output(max_count,max_coun)
-
+  output(max_count,max_count)
+main()
         
         
