@@ -1,4 +1,4 @@
-def myinput():
+def myinput()
   filename=input("Enter the file")
   return filename
 def compute(filename):
