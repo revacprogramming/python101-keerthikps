@@ -1,7 +1,7 @@
 def myinput()
-  filename=input("Enter the file")
-  return filename
-def compute(filename):
+  file=input("Enter a file")
+  return file
+def compute(file):
   count={}
   filehandle=open(filename)
   for line in filehandle:
@@ -18,9 +18,9 @@ def compute(filename):
   return maxword,maxcount
 def output(maxword,maxcount):
   print(maxword,maxcount)
-def main():
-  filename=myinput()
-  maxword,maxcount=compute(filename)
+def main()
+  file=myinput()
+  maxword,maxcount=compute(file)
   output(maxword,maxcount)
 main()
             
