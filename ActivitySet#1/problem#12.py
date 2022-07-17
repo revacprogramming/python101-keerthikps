@@ -1,7 +1,7 @@
 # RegEx
 # https://www.py4e.com/lessons/regex
 import re
-file=('dataset/mbox-short.txt')
+filename=('dataset/mbox-short.txt')
 fhand=open(file)
 number=list()
 for line in fhand:
