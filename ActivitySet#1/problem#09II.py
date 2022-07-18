@@ -26,6 +26,6 @@ def output(word,count):
   
 def main():
   fname=input()
-  word,count=compute(fname)
+  word,count=compute(fn)
   output(word,count)
 main()    
