@@ -1,6 +1,6 @@
 # RegEx
 # https://www.py4e.com/lessons/regex
-import re
+import r
 filename=('dataset/mbox-short.txt')
 fhand=open(file)
 number=list()
