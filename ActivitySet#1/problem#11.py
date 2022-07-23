@@ -7,7 +7,7 @@ counts={}
 for l in filehandle:
 	if l.startswith("From ")
 		time=l.split()[5].split(":")
-		counts [time] = counts.get(t[0], 0) + 1
+		count[time] = count.get(t[0], 0) + 1
 
     
 lst = list()
