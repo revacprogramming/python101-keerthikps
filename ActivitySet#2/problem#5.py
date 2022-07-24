@@ -1,26 +1,28 @@
-
-
 def get_cs():
-    """get string input"""
-
+  inp=input('enter a string:')
+  return inp
 
 def cs_to_dict(cs):
-    """convert connect string to a dictionary"""
-
+  counts=dict()
+  lst=cs.split()
+  for words in lst:
+    counts[words]=counts.get(words,0)+1
+  return counts
 
 def dict_to_cs(d):
-    """convert a dictionary to connect string"""
-
-
+  string=""
+  for i in d:
+    string=string+i
+  return string
+  
 def main():
-    cs = get_cs()
+  cs = get_cs()
+  d = cs_to_dict(cs) # convert connect string to a dictionary
+  print(d)
 
-    d = cs_to_dict(cs) # convert connect string to a dictionary
-    print(d)
+  cs = dict_to_cs(d)
+  print(cs)
 
-    cs = dict_to_cs(d)
-    print(cs)
-
-
-if __name__ == '__main__':
+_name_=input("Enter the file name: ")
+if _name_ == '_main_':
     main()
