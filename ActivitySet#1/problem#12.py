@@ -1,12 +1,12 @@
-# RegEx
+# Regular Expressions
 # https://www.py4e.com/lessons/regex
 import re
-filename=('dataset/mbox-short.txt')
+file=('dataset/mbox-short.txt')
 fhand=open(file)
 number=list()
 for line in fhand:
-    l=line.rstrip()
-    nums = re.findall('[0-9]+',l)
+    line=line.rstrip()
+    nums = re.findall('[0-9]+',line)
     for i in nums:
         num=int(i)
         number.append(num)
