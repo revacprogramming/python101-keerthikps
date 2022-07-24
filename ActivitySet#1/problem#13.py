@@ -1,7 +1,7 @@
-
+# Network Programming
 # https://www.py4e.com/lessons/network
 import socket
-import tim
+import time
 
 HOST = 'data.pr4e.org' #linking another website
 PORT = 80 #for http constant
